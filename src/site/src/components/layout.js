@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         html, body {
           margin: 0;
           color: #1a261f;
-          background-color: #fff;
+          background-color: #f9f9fb;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
               Arial, sans-serif;
           font-size: 1rem;
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
               color: #16446C;
               line-height: 1.1;
               text-align: center;
-              margin-top: 2.5rem;
+              margin-top: 3.5rem;
       
               + * {
                   margin-top: 1.5rem;
@@ -63,7 +63,9 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960
+          maxWidth: 1280,
+          paddingLeft: `2rem`,
+          paddingRight: `2rem`
         }}
       >
         <main>{children}</main>

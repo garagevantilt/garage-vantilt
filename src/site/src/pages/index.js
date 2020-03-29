@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import USP from "../components/usp"
 import WieZijnWij from "../components/wie-zijn-wij"
 import Service from "../components/service"
+import Stock from "../components/stock"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <WieZijnWij />
     <Service />
     <Gallery />
+    <Stock />
   </Layout>
 )
 
