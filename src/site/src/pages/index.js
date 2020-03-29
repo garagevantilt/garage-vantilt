@@ -1,12 +1,13 @@
 import React from "react"
-import { Gallery } from "gatsby-theme-gallery"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import USP from "../components/usp"
 import WieZijnWij from "../components/wie-zijn-wij"
 import Service from "../components/service"
+import Carousel from "../components/carousel"
 import Stock from "../components/stock"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -14,8 +15,9 @@ const IndexPage = () => (
     <USP />
     <WieZijnWij />
     <Service />
-    <Gallery />
+    <Carousel />
     <Stock />
+    <Contact />
   </Layout>
 )
 

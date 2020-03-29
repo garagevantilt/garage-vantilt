@@ -1,64 +1,33 @@
 import React from "react"
-import styled from "@emotion/styled"
 import { css } from "@emotion/core"
+import StockItem from "./stock-item"
 
 const Stock = () => {
     return (
         <>
             <h2>Stock</h2>
-            <div>
-                <div>
-                    <div>
-                        <span>[FOTO]</span>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>[MERK][MODEL]</li>
-                            <li>[MOTORISATIE]</li>
-                            <li>[PRIJS]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <span>[Specificaties]</span>
-                        <div>
-                            <div>
-                                <div>MOTOR</div>
-                                <div>[2.0 TFSI]</div>
-                            </div>
-                            <div>
-                                <div>TRANSMISSIE</div>
-                                <div>[Handgeschakeld]</div>
-                            </div>
-                            <div>
-                                <div>BRANDSTOF</div>
-                                <div>[Benzine]</div>
-                            </div>
-                            <div>
-                                <div>UITSTOOT</div>
-                                <div>[107 gram/km]</div>
-                            </div>
-                            <div>
-                                <div>AANTAL PK</div>
-                                <div>[165PK]</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <span>Uitrusting</span>
-                        <ul>
-                            <li><strong>[Standaard op de A1 Sportback]</strong></li>
-                            <li>[15 inch lichtmetalen velgen]</li>
-                            <li>[Smartphone interface]</li>
-                            <li>[MMI radio plus]</li>
-                            <li>[USB aansluiting]</li>
-                            <li>[Elektrisch bedienbare ramen]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <button>Bekijk deze auto op AutoScout24</button>     
+            <p>Tweedehandswagens worden afgeleverd met keuring, car pass, 1 jaar garantie en onderhoudsbeurt. Wij hebben steeds een beperkte voorraad aan wagens beschikbaar voor ieders budget.</p>
+            <StockItem />
+            <StockItem />
+            <StockItem />
+            <div css={css`
+                margin-top: 1.5rem;
+            `}>&nbsp;</div>
+            <div css={css`
+                background-color: #16446C;
+                margin: 0 auto;
+                margin-left: calc(50% - 50vw);
+                margin-right: calc(50% - 50vw);
+                padding-bottom: 3.5rem;
+                padding-top: 3.5rem;
+            `}>
+                <div css={css`
+                    margin: 0 auto;
+                    max-width: 1280px;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                `}>
+                    <button>Meer auto's</button>
                 </div>
             </div>
         </>

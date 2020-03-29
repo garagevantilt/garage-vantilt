@@ -57,6 +57,10 @@ const Layout = ({ children }) => {
           strong {
               color: #16446C;
           }
+
+          p {
+            text-align: center;
+          }
         }
       `}/>
       <Hero />
