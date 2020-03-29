@@ -1,36 +1,69 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import { Global, css } from "@emotion/core"
+import device from "../helpers/breakpoints"
+import Hero from "./hero"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Global styles={css`
+        * {
+          box-sizing: border-box;
+          margin: 0;
+        }
+      
+        * + * {
+          margin-top: 1rem;
+        }
+      
+        html, body {
+          margin: 0;
+          color: #1a261f;
+          background-color: #fff;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              Arial, sans-serif;
+          font-size: 1rem;
+          line-height: 1.4;
+          letter-spacing: 0.07rem;
+          overflow-x: hidden;
+      
+          @media ${device.laptop} {
+              font-size: 1.1rem;
+              line-height: 1.5;
+          }
+      
+          /* remove margin for main div where Gatsby mounts into */
+      
+          > div {
+              margin-top: 0;
+          }
+      
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+              color: #16446C;
+              line-height: 1.1;
+              text-align: center;
+              margin-top: 2.5rem;
+      
+              + * {
+                  margin-top: 1.5rem;
+              }
+          }
+      
+          strong {
+              color: #16446C;
+          }
+        }
+      `}/>
+      <Hero />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 960
         }}
       >
         <main>{children}</main>
@@ -42,10 +75,6 @@ const Layout = ({ children }) => {
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
