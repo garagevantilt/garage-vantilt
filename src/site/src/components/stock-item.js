@@ -11,6 +11,7 @@ const StockItem = () => {
             `}>
                 <div css={css`
                     display: flex;
+                    flex-wrap: wrap;
                     background-color: #fff;
                     border-bottom: 1px solid #e0e0e0;
                     width: 100%;
@@ -39,6 +40,7 @@ const StockItem = () => {
                     margin: 0 auto;
                     width: 100%;
                     align-items: flex-start;
+                    flex-wrap: wrap;
                 `}>
                     <div css={css`
                         flex-basis: 30%;
