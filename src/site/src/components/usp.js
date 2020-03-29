@@ -9,16 +9,13 @@ const USP = () => {
         color: #ababab;
         margin: 0 auto;
         display: flex;
-        flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         list-style-type: none;
-
         margin-left: calc(50% - 50vw);
         margin-right: calc(50% - 50vw);
-
         height: 75px;
-
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     `;
 
