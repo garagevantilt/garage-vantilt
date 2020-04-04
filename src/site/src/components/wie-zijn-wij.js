@@ -24,8 +24,7 @@ const WieZijnWij = () => {
                 Bij Garage Vantilt hebben we al meer dan 25 jaar ervaring in het onderhouden, herstellen en verkopen van voertuigen. Wij zijn een kleine familiegarage uitgebaat door vader en zoon.
             </p>
             <div css={css`
-                // margin-left: calc(50% - 50vw);
-                // margin-right: calc(50% - 50vw);
+                padding-bottom: 3.5rem;
             `}>
                 <Img fluid={data.vantilt.sharp.fluid} />
             </div>

@@ -5,7 +5,6 @@ import { Gallery } from "gatsby-theme-gallery"
 const Carousel = () => {
     return (
         <div css={css`
-            background-color: #16446C;
             margin: 0 auto;
             margin-left: calc(50% - 50vw);
             margin-right: calc(50% - 50vw);
@@ -18,6 +17,7 @@ const Carousel = () => {
                 padding-left: 2rem;
                 padding-right: 2rem;
             `}>
+                <h2>Gallerij</h2>
                 <Gallery />
             </div>
         </div>
