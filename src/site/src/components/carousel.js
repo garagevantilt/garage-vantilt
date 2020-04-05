@@ -8,7 +8,7 @@ const Carousel = () => {
             margin: 0 auto;
             margin-left: calc(50% - 50vw);
             margin-right: calc(50% - 50vw);
-            padding-bottom: 3.5rem;
+            padding-bottom: 1.5rem;
             padding-top: 3.5rem;
         `}>
             <div css={css`

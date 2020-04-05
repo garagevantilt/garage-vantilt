@@ -25,6 +25,7 @@ const WieZijnWij = () => {
             </p>
             <div css={css`
                 padding-bottom: 3.5rem;
+                
             `}>
                 <Img fluid={data.vantilt.sharp.fluid} />
             </div>

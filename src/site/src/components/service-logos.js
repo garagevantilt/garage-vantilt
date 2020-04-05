@@ -20,7 +20,7 @@ const ServiceLogos = () => {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                align-items: center;
+                align-items: flex-end;
                 margin: 0 auto;
                 max-width: 1280px;
                 padding-left: 2rem;
