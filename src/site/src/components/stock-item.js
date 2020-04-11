@@ -2,11 +2,12 @@ import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import car from "../images/car.svg"
 
 const StockItem = () => {
     const data = useStaticQuery(graphql`
         query {
-            a1: file(relativePath: { eq: "audi-a1.jpg" }) {
+            car: file(relativePath: { eq: "car.png" }) {
                 sharp: childImageSharp {
                     fluid(maxWidth: 320) {
                         ...GatsbyImageSharpFluid
@@ -31,7 +32,7 @@ const StockItem = () => {
                     width: 100%;
                     padding: 1rem;
                 `}>
-                    <Img fluid={data.a1.sharp.fluid} />
+                    <img src={car} alt="" />
                 </div>
                 <div css={css`
                         flex: 1;
