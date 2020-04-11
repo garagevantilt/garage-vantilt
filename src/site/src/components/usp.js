@@ -4,6 +4,7 @@ import Flicking from "@egjs/react-flicking"
 import { Fade, AutoPlay } from "@egjs/flicking-plugins"
 
 import Checkmark from "./checkmark"
+import device from "../helpers/breakpoints"
 
 const USP = () => {
     const Container = styled(Flicking)`
@@ -13,18 +14,23 @@ const USP = () => {
         margin-left: calc(50% - 50vw);
         margin-right: calc(50% - 50vw);
         height: 75px;
-        box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
     `;
 
     const Item = styled.div`
         display: block;
         margin: 0 auto;
         width: 320px;
-        padding-top: 1.25rem;
+        padding-top: 1.70rem;
         text-align: center;
+
+        @media ${device.tablet} {
+            padding-top: 1.25rem;
+        }
     `;
 
     return (

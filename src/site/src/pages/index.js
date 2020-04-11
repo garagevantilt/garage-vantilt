@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Navigatie from "../components/navigatie"
 import USP from "../components/usp"
 import WieZijnWij from "../components/wie-zijn-wij"
 import Service from "../components/service"
@@ -13,6 +14,7 @@ import Contact from "../components/contact"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Navigatie />
     <USP />
     <WieZijnWij />
     <Service />

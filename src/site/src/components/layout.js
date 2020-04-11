@@ -11,11 +11,7 @@ const Layout = ({ children }) => {
           box-sizing: border-box;
           margin: 0;
         }
-      
-        * + * {
-          margin-top: 1rem;
-        }
-      
+
         html, body {
           margin: 0;
           color: #1a261f;
@@ -26,18 +22,18 @@ const Layout = ({ children }) => {
           line-height: 1.4;
           letter-spacing: 0.07rem;
           overflow-x: hidden;
-      
+
           @media ${device.laptop} {
               font-size: 1.1rem;
               line-height: 1.5;
           }
-      
+
           /* remove margin for main div where Gatsby mounts into */
-      
+
           > div {
               margin-top: 0;
           }
-      
+
           h1,
           h2,
           h3,
@@ -48,12 +44,19 @@ const Layout = ({ children }) => {
               line-height: 1.1;
               text-align: center;
               margin-top: 3.5rem;
-      
+
               + * {
                   margin-top: 1.5rem;
               }
           }
-      
+
+          .anchor {
+            display: block;
+            position: relative;
+            top: -50px;
+            visibility: hidden;
+          }
+
           strong {
               color: #16446C;
           }
@@ -74,8 +77,8 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer style={{
-          textAlign: "center"  
-        }}> 
+          textAlign: "center"
+        }}>
           © {new Date().getFullYear()}
         </footer>
       </div>

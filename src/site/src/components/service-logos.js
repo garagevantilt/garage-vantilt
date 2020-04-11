@@ -38,8 +38,8 @@ const ServiceLogos = () => {
                         padding-top: 0rem;
                     }
                 `}>
-                    <img src={band} css={css`
-                        display: block; 
+                    <img src={band} alt="Banden." css={css`
+                        display: block;
                         margin-left: auto;
                         margin-right: auto;`} />
                     <h3 css={css`margin-top: 2rem; text-transform: uppercase;`}>Banden</h3>
@@ -55,8 +55,8 @@ const ServiceLogos = () => {
                         padding-top: 0rem;
                     }
                 `}>
-                    <img src={diagnose} css={css`
-                        display: block; 
+                    <img src={diagnose} alt="Diagnose." css={css`
+                        display: block;
                         margin-left: auto;
                         margin-right: auto;`} />
                     <h3 css={css`margin-top: 0.5rem; text-transform: uppercase;`}>Diagnose</h3>
@@ -72,8 +72,8 @@ const ServiceLogos = () => {
                         padding-top: 0rem;
                     }
                 `}>
-                    <img src={onderhoud} css={css`
-                        display: block; 
+                    <img src={onderhoud} alt="Onderhouden." css={css`
+                        display: block;
                         margin-left: auto;
                         margin-right: auto;`} />
                     <h3 css={css`margin-top: 1.5rem; text-transform: uppercase;`}>Onderhoud</h3>
