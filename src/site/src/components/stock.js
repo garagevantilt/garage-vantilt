@@ -4,7 +4,9 @@ import StockItem from "./stock-item"
 
 const Stock = () => {
     return (
-        <>
+        <div css={css`
+            margin: 0 auto;
+        `}>
             <span className="anchor" id="stock">Stock</span>
             <h2>Stock</h2>
             <p>Tweedehandswagens worden afgeleverd met keuring, car pass, 1 jaar garantie en onderhoudsbeurt. Wij hebben steeds een beperkte voorraad aan wagens beschikbaar voor ieders budget.</p>
@@ -39,7 +41,7 @@ const Stock = () => {
                     <button>Meer auto's</button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -12,6 +12,9 @@ const Navigatie = () => {
                     fluid(maxWidth: 117) {
                         ...GatsbyImageSharpFluid
                     }
+                    fixed {
+                        src
+                    }
                 }
             }
         }
@@ -57,7 +60,7 @@ const Navigatie = () => {
             z-index: 2001;
             box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
         `}>
-            <Img fluid={data.logo.sharp.fluid} alt="Logo." width="117px" />
+            <img src={data.logo.sharp.fixed.src} alt="Logo." height="35px" />
             <LinkWrapper>
                 <li><Link href="#service">Service</Link></li>
                 <li><Link href="#stock">Stock</Link></li>
