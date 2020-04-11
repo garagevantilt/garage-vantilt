@@ -34,6 +34,10 @@ const ServiceLogos = () => {
                     margin: 0 auto;
                     min-width: 250px;
 
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
                     @media ${device.tablet} {
                         padding-top: 0rem;
                     }
@@ -41,7 +45,8 @@ const ServiceLogos = () => {
                     <img src={band} alt="Banden." css={css`
                         display: block;
                         margin-left: auto;
-                        margin-right: auto;`} />
+                        margin-right: auto;
+                    `} />
                     <h3 css={css`margin-top: 2rem; text-transform: uppercase;`}>Banden</h3>
                 </div>
                 <div css={css`
@@ -51,6 +56,10 @@ const ServiceLogos = () => {
                     min-width: 250px;
                     padding-top: 2.5rem;
 
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
                     @media ${device.tablet} {
                         padding-top: 0rem;
                     }
@@ -58,7 +67,8 @@ const ServiceLogos = () => {
                     <img src={diagnose} alt="Diagnose." css={css`
                         display: block;
                         margin-left: auto;
-                        margin-right: auto;`} />
+                        margin-right: auto;
+                    `} />
                     <h3 css={css`margin-top: 0.5rem; text-transform: uppercase;`}>Diagnose</h3>
                 </div>
                 <div css={css`
@@ -68,6 +78,10 @@ const ServiceLogos = () => {
                     min-width: 250px;
                     padding-top: 2.5rem;
 
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
                     @media ${device.tablet} {
                         padding-top: 0rem;
                     }
@@ -75,7 +89,8 @@ const ServiceLogos = () => {
                     <img src={onderhoud} alt="Onderhouden." css={css`
                         display: block;
                         margin-left: auto;
-                        margin-right: auto;`} />
+                        margin-right: auto;
+                    `} />
                     <h3 css={css`margin-top: 1.5rem; text-transform: uppercase;`}>Onderhoud</h3>
                 </div>
             </div>
