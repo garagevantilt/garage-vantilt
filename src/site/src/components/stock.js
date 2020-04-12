@@ -1,6 +1,8 @@
 import React from "react"
 import { css } from "@emotion/core"
 import StockItem from "./stock-item"
+import Button from "../helpers/button"
+import device from "../helpers/breakpoints"
 
 const Stock = () => {
     return (
@@ -14,12 +16,18 @@ const Stock = () => {
                 margin: 0 auto;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: center;
                 padding-top: 2rem;
+
+                @media ${device.desktop} {
+                    justify-content: space-between;
+                }
             `}>
+                <StockItem hasBadge={true} text="nieuw" />
                 <StockItem />
+                <StockItem hasBadge={true} text="topoccasie" />
                 <StockItem />
-                <StockItem />
+                <StockItem hasBadge={true} text="verkocht" />
             </div>
             <div css={css`
                 margin-top: 1.5rem;
@@ -37,8 +45,10 @@ const Stock = () => {
                     max-width: 1280px;
                     padding-left: 2rem;
                     padding-right: 2rem;
+                    display: flex;
+                    justify-content: center;
                 `}>
-                    <button>Meer auto's</button>
+                    <Button link="//www.autoscout24.be/" text="Meer auto's" />
                 </div>
             </div>
         </div>

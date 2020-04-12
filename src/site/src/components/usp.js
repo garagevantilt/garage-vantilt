@@ -35,7 +35,7 @@ const USP = () => {
 
     return (
         <>
-            <Container className="flicking" gap={1280} circular={true} autoResize={true} horizontal={true}
+            <Container className="flicking" gap={200} circular={true} autoResize={true} horizontal={true}
                 plugins={[new Fade(), new AutoPlay(2000, "NEXT")]}>
                 <Item className="panel"><Checkmark /> Ruim 25 jaar ervaring</Item>
                 <Item className="panel"><Checkmark /> Onderhoud</Item>

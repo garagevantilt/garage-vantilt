@@ -44,6 +44,7 @@ const Layout = ({ children }) => {
               line-height: 1.1;
               text-align: center;
               margin-top: 3.5rem;
+              text-transform: uppercase;
 
               + * {
                   margin-top: 1.5rem;

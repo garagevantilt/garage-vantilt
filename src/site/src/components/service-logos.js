@@ -33,6 +33,7 @@ const ServiceLogos = () => {
                     flex: 1;
                     margin: 0 auto;
                     min-width: 250px;
+                    transition: all 0.2s ease-in-out;
 
                     &:hover {
                         transform: scale(1.05);
@@ -46,8 +47,11 @@ const ServiceLogos = () => {
                         display: block;
                         margin-left: auto;
                         margin-right: auto;
+                        transform: scale(0.8);
+                        position: relative;
+                        top: 15px;
                     `} />
-                    <h3 css={css`margin-top: 2rem; text-transform: uppercase;`}>Banden</h3>
+                    <h3 css={css`margin-top: 2rem; text-transform: lowercase;`}>Banden</h3>
                 </div>
                 <div css={css`
                     flex-basis: 30%;
@@ -55,6 +59,7 @@ const ServiceLogos = () => {
                     margin: 0 auto;
                     min-width: 250px;
                     padding-top: 2.5rem;
+                    transition: all 0.2s ease-in-out;
 
                     &:hover {
                         transform: scale(1.05);
@@ -69,7 +74,7 @@ const ServiceLogos = () => {
                         margin-left: auto;
                         margin-right: auto;
                     `} />
-                    <h3 css={css`margin-top: 0.5rem; text-transform: uppercase;`}>Diagnose</h3>
+                    <h3 css={css`margin-top: 0.5rem; text-transform: lowercase;`}>Diagnose</h3>
                 </div>
                 <div css={css`
                     flex-basis: 30%;
@@ -77,6 +82,7 @@ const ServiceLogos = () => {
                     margin: 0 auto;
                     min-width: 250px;
                     padding-top: 2.5rem;
+                    transition: all 0.2s ease-in-out;
 
                     &:hover {
                         transform: scale(1.05);
@@ -91,7 +97,7 @@ const ServiceLogos = () => {
                         margin-left: auto;
                         margin-right: auto;
                     `} />
-                    <h3 css={css`margin-top: 1.5rem; text-transform: uppercase;`}>Onderhoud</h3>
+                    <h3 css={css`margin-top: 1.5rem; text-transform: lowercase;`}>Onderhoud</h3>
                 </div>
             </div>
         </div>
