@@ -2,6 +2,7 @@ import React from "react"
 import { Global, css } from "@emotion/core"
 import device from "../helpers/breakpoints"
 import Hero from "./hero"
+import fegarbel from "../images/fegarbel.png"
 
 const Layout = ({ children }) => {
   return (
@@ -78,9 +79,11 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer style={{
-          textAlign: "center"
+          textAlign: `center`,
+          color: `#ababab`
         }}>
-          © {new Date().getFullYear()}
+          <p style={{ padding: `1rem`}}>Lid van Fegarbel</p>
+          <img src={fegarbel} alt="Lid van Fegarbel" height="50%" style={{ paddingBottom: `1rem`}}/>
         </footer>
       </div>
     </>

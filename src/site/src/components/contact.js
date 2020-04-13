@@ -10,6 +10,13 @@ import map from "../images/map.png"
 import device from "../helpers/breakpoints"
 
 const Contact = () => {
+  const now = Date.now();
+  const currentDay = new Date(now).getDay();
+
+  const isWorkday = currentDay === 1 || currentDay === 2 || currentDay === 3 || currentDay === 4;
+  const isAppointment = currentDay === 5 || currentDay === 6;
+  const isClosed = currentDay === 0;
+
   const DayBox = styled.div`
     flex-basis: 30%;
     border: 1px solid #e0e0e0;
@@ -294,7 +301,7 @@ const Contact = () => {
                 flex-wrap: wrap;
               `}
             >
-              <DayBox className="active">
+              <DayBox className={isWorkday ? "active" : ""}>
                 <h4
                   css={css`
                     color: #fff;
@@ -305,7 +312,7 @@ const Contact = () => {
                 <span>08u00 - 12u00</span>
                 <span>13u00 - 19u00</span>
               </DayBox>
-              <DayBox>
+              <DayBox className={isAppointment ? "active" : ""}>
                 <h4
                   css={css`
                     color: #fff;
@@ -315,7 +322,7 @@ const Contact = () => {
                 </h4>
                 <span>Op afspraak</span>
               </DayBox>
-              <DayBox>
+              <DayBox className={isClosed ? "active" : ""}>
                 <h4
                   css={css`
                     color: #fff;
