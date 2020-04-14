@@ -24,7 +24,7 @@ const Carousel = () => {
                 padding-left: 2rem;
                 padding-right: 2rem;
             `}>
-                <h2>Gallerij</h2>
+                <h2>Galerij</h2>
                 <Gallery />
             </div>
         </div>

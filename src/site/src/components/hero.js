@@ -6,7 +6,7 @@ import styled from "@emotion/styled"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      hero: file(relativePath: { eq: "vantilt-hero.jpg" }) {
+      hero: file(relativePath: { eq: "new-hero.jpg" }) {
         sharp: childImageSharp {
           fluid(maxWidth: 1440) {
             ...GatsbyImageSharpFluid
