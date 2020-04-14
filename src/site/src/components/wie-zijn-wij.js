@@ -9,7 +9,7 @@ import device from "../helpers/breakpoints"
 const WieZijnWij = () => {
     const data = useStaticQuery(graphql`
         query {
-            vantilt: file(relativePath: { eq: "vantilt.jpg" }) {
+            vantilt: file(relativePath: { eq: "pa.jpg" }) {
                 sharp: childImageSharp {
                     fluid(maxWidth: 1440) {
                         ...GatsbyImageSharpFluid
