@@ -1,10 +1,11 @@
 import React from "react"
 import { css } from "@emotion/core"
+import Img from "gatsby-image"
 import car from "../images/car.svg"
 import InverseButton from "../helpers/inverse-button"
 import device from "../helpers/breakpoints"
 
-const StockItem = ({hasBadge, text}) => {
+const StockItem = ({hasBadge, text, item, image}) => {
     let badgeText = "";
     let visibility = false;
 
@@ -15,6 +16,12 @@ const StockItem = ({hasBadge, text}) => {
     else {
         visibility = "hidden";
     }
+
+    const formatter = new Intl.NumberFormat('nl-NL', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 0
+    })
 
     return (
         <div css={css`
@@ -65,32 +72,37 @@ const StockItem = ({hasBadge, text}) => {
                     }
                 }
             `}>
-                <img src={car} alt="" width="100%"/>
+                <Img fluid={image.sharp.fluid} alt="" width="100%"/>
             </div>
             <div css={css`
                     flex: 1;
                     margin: 0 auto;
-                    padding: 1.5rem;
-
+                    padding: 1rem;
                     ul {
                         list-style: none;
                     }
 
                     ul li {
                         position: relative;
-                        left: -4.5rem;
+                        left: -1.5rem;
                     }
 
                     ul li:before {
                         content: '✓ ';
                     }
             `}>
-                <strong css={css`
-                    position: relative;
-                    left: -2.5rem;
-                `}>Audi A1 Sportback</strong>
+                <strong>{item.makeModel}</strong>
                 <ul>
-                    <li>3000 EUR</li>
+                    <li>
+                        {formatter.format(item.price)}
+                    </li>
+                    <li>{item.km}</li>
+                    <li>{item.firstRegistration}</li>
+                    <li>{item.motor}</li>
+                    <li>{item.transmission}, {item.fuel.toLowerCase()}</li>
+                    <li>{item.owners}</li>
+                    <li>{item.consumption}</li>
+                    <li>{item.co2}</li>
                 </ul>
             </div>
             <div css={css`
@@ -103,7 +115,7 @@ const StockItem = ({hasBadge, text}) => {
                 display: flex;
                 justify-content: center;
             `}>
-                <InverseButton link="//www.autoscout24.be/" text="Meer weten" />
+                <InverseButton link={item.link} text="Meer weten" />
             </div>
         </div>
     )
