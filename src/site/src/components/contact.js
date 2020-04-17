@@ -10,12 +10,30 @@ import map from "../images/map.png"
 import device from "../helpers/breakpoints"
 
 const Contact = () => {
-  const now = Date.now();
-  const currentDay = new Date(now).getDay();
+  
+  const isActive = (type) => {
+    const now = Date.now();
+    const currentDay = new Date(now).getDay();
 
-  const isWorkday = currentDay === 1 || currentDay === 2 || currentDay === 3 || currentDay === 4;
-  const isAppointment = currentDay === 5 || currentDay === 6;
-  const isClosed = currentDay === 0;
+    const isWorkday = currentDay === 1 || currentDay === 2 || currentDay === 3 || currentDay === 4;
+    const isAppointment = currentDay === 5 || currentDay === 6;
+    const isClosed = currentDay === 0;
+
+    if (type === "isWorkday")
+    {
+      return isWorkday;
+    }
+
+    if (type === "isAppointment")
+    {
+      return isAppointment;
+    }
+
+    if (type === "isClosed")
+    {
+      return isClosed;
+    }
+  }
 
   const DayBox = styled.div`
     flex-basis: 30%;
@@ -301,7 +319,7 @@ const Contact = () => {
                 flex-wrap: wrap;
               `}
             >
-              <DayBox className={isWorkday ? "active" : ""}>
+              <DayBox className={isActive("isWorkday") ? "active" : ""}>
                 <h4
                   css={css`
                     color: #fff;
@@ -312,7 +330,7 @@ const Contact = () => {
                 <span>08u00 - 12u00</span>
                 <span>13u00 - 19u00</span>
               </DayBox>
-              <DayBox className={isAppointment ? "active" : ""}>
+              <DayBox className={isActive("isAppointment") ? "active" : ""}>
                 <h4
                   css={css`
                     color: #fff;
@@ -322,7 +340,7 @@ const Contact = () => {
                 </h4>
                 <span>Op afspraak</span>
               </DayBox>
-              <DayBox className={isClosed ? "active" : ""}>
+              <DayBox className={isActive("isClosed") ? "active" : ""}>
                 <h4
                   css={css`
                     color: #fff;
