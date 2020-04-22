@@ -56,9 +56,7 @@ const Stock = () => {
       </span>
       <h2>Stock</h2>
       <p>
-        Tweedehandswagens worden afgeleverd met keuring, car pass, 1 jaar
-        garantie en onderhoudsbeurt. Wij hebben steeds een beperkte voorraad aan
-        wagens beschikbaar voor ieders budget.
+        Onze tweedehandswagens worden steeds gekeurd afgeleverd met één jaar garantie, carpass, onderhoudsbeurt en een checklist van meer dan 110 punten. Wij hebben steeds een beperkte stock voor ieders budget ter beschikking. Niet gevonden wat u zoekt? Kom even langs of bel ons dan gaan wij voor u op zoek naar de geschikte wagen.
       </p>
       <div
         css={css`

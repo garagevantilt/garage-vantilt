@@ -1,7 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
 import Img from "gatsby-image"
-import car from "../images/car.svg"
 import InverseButton from "../helpers/inverse-button"
 import device from "../helpers/breakpoints"
 

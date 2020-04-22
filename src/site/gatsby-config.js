@@ -4,9 +4,9 @@ module.exports = {
     url: "http://localhost:7071/api/",
   },
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: ` Garage Vantilt`,
+    description: `Wij zijn een klein familiebedrijf met al meer dan 25 jaar ervaring met het onderhoud, herstellen en verkopen van voertuigen. Wij werken elke dag met veel passie om de wagens van onze klanten in topconditie te houden.`,
+    author: `@maartenlouage`,
   },
   plugins: [
     `gatsby-plugin-emotion`,

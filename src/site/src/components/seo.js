@@ -1,14 +1,11 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+
+import favicon16 from "../images/favicon-16x16.png"
+import favicon32 from "../images/favicon-32x32.png"
+import favicon96 from "../images/favicon-96x96.png"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -68,12 +65,18 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      link={[
+        { rel: "icon", type: "image/png", sizes: "16x16", href: `${favicon16}` },
+        { rel: "icon", type: "image/png", sizes: "32x32", href: `${favicon32}` },
+        { rel: "icon", type: "image/png", sizes: "96x96", href: `${favicon96}` },
+        { rel: "shortcut icon", type: "image/png", href: `${favicon96}` },
+      ]}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `nl`,
   meta: [],
   description: ``,
 }

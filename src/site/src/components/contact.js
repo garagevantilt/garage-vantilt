@@ -10,7 +10,7 @@ import map from "../images/map.png"
 import device from "../helpers/breakpoints"
 
 const Contact = () => {
-  
+
   const isActive = (type) => {
     const now = Date.now();
     const currentDay = new Date(now).getDay();
@@ -109,8 +109,7 @@ const Contact = () => {
       >
         <div>
           <p>
-            Voor vragen of info over onze diensten of onze wagens kan u ons
-            steeds contacteren.
+            Voor vragen of info over onze services of tweedehandswagens kan u ons altijd contacteren.
           </p>
           <div
             css={css`

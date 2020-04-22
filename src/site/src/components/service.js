@@ -19,7 +19,7 @@ const Service = () => {
                 <span className="anchor" id="service">Service</span>
                 <h2>Service</h2>
                 <p>
-                    Door onze ervaring en uitgebreid netwerk kunnen we onze klanten steeds een oplossing op maat bieden. Wij bieden onze klanten steeds de hoogste service tegen de beste prijs. U kan bij ons ondermeer terecht voor onderhoud, herstellingen, banden, batterijen, diagnose, kleine onderdelen of voor vrijblijvend advies.
+                    Wij trachten voor onze klanten steeds een oplossing op maat te vinden. Hierbij bouwen we verder op onze jarenlange ervaring en ons uitgebreide netwerk. Wij proberen onze klanten steeds de hoogste service te bieden tegen de best mogelijke prijs. U kan bij ons ondermeer terecht voor onderhoud, herstellingen, banden, batterijen, diagnose, kleine onderdelen of voor vrijblijvend advies.
                 </p>
             </div>
         </div>
