@@ -1,10 +1,11 @@
 import React from "react"
 import { css } from "@emotion/core"
-import Img from "gatsby-image"
+import dateFnsFormat from "date-fns/format"
+import dateFnsParse from "date-fns/parse"
 import InverseButton from "../helpers/inverse-button"
 import device from "../helpers/breakpoints"
 
-const StockItem = ({hasBadge, text, item, image}) => {
+const StockItem = ({ hasBadge, text, item }) => {
     let badgeText = "";
     let visibility = false;
 
@@ -20,7 +21,20 @@ const StockItem = ({hasBadge, text, item, image}) => {
         style: 'currency',
         currency: 'EUR',
         minimumFractionDigits: 0
-    })
+    });
+
+    const kmFormatter = new Intl.NumberFormat('nl-NL', {
+        minimumFractionDigits: 0
+    });
+
+    function parseDate(str, format, locale) {
+        return dateFnsParse(str, format, new Date(), { locale });
+        
+    }   
+
+    function formatDate(date, format, locale) {
+        return dateFnsFormat(date, format, { locale });
+      }
 
     return (
         <div css={css`
@@ -71,7 +85,8 @@ const StockItem = ({hasBadge, text, item, image}) => {
                     }
                 }
             `}>
-                <Img fluid={image.sharp.fluid} alt="" width="100%"/>
+                <img src={item.image} alt="" width="100%" />
+
             </div>
             <div css={css`
                     flex: 1;
@@ -93,15 +108,16 @@ const StockItem = ({hasBadge, text, item, image}) => {
                 <strong>{item.makeModel}</strong>
                 <ul>
                     <li>
+                        {`${item.version}`}
+                    </li>
+                    <li>
                         {formatter.format(item.price)}
                     </li>
-                    <li>{item.km}</li>
-                    <li>{item.firstRegistration}</li>
+                    <li>{kmFormatter.format(item.km)} km</li>
+                    <li>{formatDate(parseDate(item.firstRegistration, "yyyy-MM-dd", "nl-NL"), "yyyy-MM")}</li>
                     <li>{item.motor}</li>
-                    <li>{item.transmission}, {item.fuel.toLowerCase()}</li>
-                    <li>{item.owners}</li>
-                    <li>{item.consumption}</li>
-                    <li>{item.co2}</li>
+                    {item.fuel && item.gearbox && <li>{item.fuel}, {item.gearbox.toLowerCase()}</li>}
+                    <li>{item.co2}g CO2/km (comb.)</li>
                 </ul>
             </div>
             <div css={css`

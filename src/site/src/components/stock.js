@@ -1,49 +1,28 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { useStaticQuery, graphql } from "gatsby"
 import StockItem from "./stock-item"
 import Button from "../helpers/button"
 import device from "../helpers/breakpoints"
+import useGoCar from "../hooks/use-gocar"
+import useGoCarFuels from "../hooks/use-gocar-fuels"
+import useGoCarGearbox from "../hooks/use-gocar-gearbox"
 
 const Stock = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allStock(sort: { fields: price }) {
-        nodes {
-          makeModel
-          price
-          km
-          firstRegistration
-          motor
-          transmission
-          fuel
-          state
-          owners
-          consumption
-          co2
-          link
-          picture
-          tag
-        }
-      }
-      images: allFile(
-        filter: {
-          absolutePath: { regex: "/stock/" }
-          extension: { regex: "/jpg|jpeg|png/" }
-        }
-      ) {
-        nodes {
-          name
-          extension
-          sharp: childImageSharp {
-            fluid(maxHeight: 250) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
+  const fuels = useGoCarFuels();
+  const gearbox = useGoCarGearbox();
+  let cars = useGoCar(fuels, gearbox);
+
+  function compare( a, b ) {
+    if ( a.price < b.price ){
+      return -1;
     }
-  `)
+    if ( a.price > b.price ){
+      return 1;
+    }
+    return 0;
+  }
+
+  cars = cars.sort(compare);
 
   return (
     <div
@@ -71,9 +50,8 @@ const Stock = () => {
           }
         `}
       >
-        {data.allStock.nodes.map((stock) => {
-            const image = data.images.nodes.filter(image => image.name === stock.picture.slice(0, -4))[0];
-            return <StockItem item={stock} image={image} />
+        {cars.map((car, index) => {
+          return <StockItem item={car} key={index} />
         })}
       </div>
       <div
@@ -103,7 +81,7 @@ const Stock = () => {
             justify-content: center;
           `}
         >
-          <Button link="//www.autoscout24.be/nl/verkopers/garage-vantilt/occasions?ipc=dealerinfo-home%7Cstocklist&ipl=offer-all#atype=C&cid=16879215&ustate=U,N,A&sort=price&results=20&page=1" text="Meer auto's" />
+          <Button link="//gocar.be/nl/dealer/3830-wellen/garage-vantilt-bvba_1-25443-1154871" text="Meer auto's" />
         </div>
       </div>
     </div>
