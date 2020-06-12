@@ -260,8 +260,8 @@ const Contact = () => {
                         }
                       `}
                     >
-                      <StyledLink href="mailto:garagevantilt@gmail.com">
-                        garagevantilt@gmail.com
+                      <StyledLink href="mailto:info@garagevantilt.be">
+                        info@garagevantilt.b
                       </StyledLink>
                     </p>
                   </div>
