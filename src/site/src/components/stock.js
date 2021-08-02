@@ -46,7 +46,7 @@ const Stock = () => {
           padding-top: 2rem;
 
           @media ${device.desktop} {
-            justify-content: space-between;
+            justify-content: left;
           }
         `}
       >

@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -10,6 +11,18 @@ import map from "../images/map.png"
 import device from "../helpers/breakpoints"
 
 const Contact = () => {
+
+  const data = useStaticQuery(graphql`
+        query {
+            logo: file(relativePath: { eq: "GARAGE VANTILT_2021.png" }) {
+                sharp: childImageSharp {
+                    fixed(height: 65) {
+                        src
+                    }
+                }
+            }
+        }
+    `)
 
   const isActive = (type) => {
     const now = Date.now();
@@ -149,7 +162,6 @@ const Contact = () => {
                       }
                     `}
                   >
-                    <FontAwesomeIcon icon={faHome} />
                   </div>
                   <div
                     css={css`
@@ -168,11 +180,13 @@ const Contact = () => {
                         }
                       `}
                     >
+                      <img src={data.logo.sharp.fixed.src} alt="Garage Vantilt." />
+                      <br />
                       Garage Vantilt
                       <br />
-                      Plattestraat 46
+                      Kolmenstraat 1318
                       <br />
-                      3830 Wellen
+                      3570 Alken
                     </p>
                   </div>
                 </div>
@@ -324,10 +338,10 @@ const Contact = () => {
                     color: #fff;
                   `}
                 >
-                  Maandag tot donderdag
+                  Maandag tot vrijdag
                 </h4>
                 <span>08u00 - 12u00</span>
-                <span>13u00 - 19u00</span>
+                <span>13u00 - 18u00</span>
               </DayBox>
               <DayBox className={isActive("isAppointment") ? "active" : ""}>
                 <h4
@@ -335,7 +349,7 @@ const Contact = () => {
                     color: #fff;
                   `}
                 >
-                  Vrijdag en zaterdag
+                  zaterdag
                 </h4>
                 <span>Op afspraak</span>
               </DayBox>

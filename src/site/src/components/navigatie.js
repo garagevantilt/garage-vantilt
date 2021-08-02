@@ -6,9 +6,9 @@ import { useStaticQuery, graphql } from "gatsby"
 const Navigatie = () => {
     const data = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "logo.png" }) {
+            logo: file(relativePath: { eq: "GARAGE VANTILT_2021.png" }) {
                 sharp: childImageSharp {
-                    fixed(height: 35) {
+                    fixed(height: 65) {
                         src
                     }
                 }
