@@ -7,7 +7,7 @@ import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faHome } from "@fortawesome/free-solid-svg-icons"
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons"
-import map from "../images/map.png"
+import map from "../images/contact_map.png"
 import device from "../helpers/breakpoints"
 
 const Contact = () => {
