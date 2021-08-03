@@ -92,6 +92,7 @@ const StockItem = ({ hasBadge, text, item }) => {
                     flex: 1;
                     margin: 0 auto;
                     padding: 1rem;
+                    min-height: 300px;
                     ul {
                         list-style: none;
                     }
