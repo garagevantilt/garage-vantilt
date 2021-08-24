@@ -41,7 +41,7 @@ export default function useGoCar(fuels, gearboxes) {
                     owners: car["number_of_previous_owners"],
                     co2: car["CO2_emissions"],
                     image: car["images"][0].url,
-                    link: `https://gocar.be/nl/autos/${car["brand_slug"]}/${car["model_slug"].nl}/${car["version_slug"]}/id/${car["id"]}`
+                    link: `https://gocar.be/nl/autos/${car["model_text"]/${car["version_slug"]}/id/${car["id"]}`
                 }
             })
         }
