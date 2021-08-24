@@ -30,7 +30,7 @@ export default function useGoCar(fuels, gearboxes) {
 
             return cars.data.map(car => {
                 return {
-                    makeModel: `${car["brand_name"]} ${car["model_name"].nl}`,
+                    makeModel: `${car["brand_name"]} ${car["model_text"]}`,
                     version: car["version"],
                     price: parseFloat(car["price"]),
                     firstRegistration: car["first_registration"],
