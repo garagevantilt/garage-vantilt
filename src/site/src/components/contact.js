@@ -288,7 +288,7 @@ const Contact = () => {
                 margin-top: 2.5rem;
               `}
             >
-              <a href="https://www.google.com/maps/place/Plattestraat+46,+3830+Wellen,+België/@50.8515676,5.3388851,17z/data=!3m1!4b1!4m5!3m4!1s0x47c11f21a98e7ca1:0xd991d11d464d490!8m2!3d50.8515676!4d5.3410738">
+              <a href="https://www.google.be/maps/place/Kolmenstraat+1318,+3570+Alken,+België/@50.8891963,5.300293,17z/data=!3m1!4b1!4m5!3m4!1s0x47c118a1b15caf59:0x51029c645c8a5b27!8m2!3d50.8891963!4d5.3024817">
                 <img src={map} alt="Locatie op de kaart." width="100%" />
               </a>
             </div>
