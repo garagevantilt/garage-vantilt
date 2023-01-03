@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faHome } from "@fortawesome/free-solid-svg-icons"
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons"
 import map from "../images/contact_map.png"
 import device from "../helpers/breakpoints"
@@ -108,10 +107,10 @@ const Contact = () => {
 
   return (
     <>
-      <span className="anchor" id="contact">
-        Contact
+      <span className="anchor" id="afspraak">
+      Afspraak
       </span>
-      <h2>Contact</h2>
+      <h2>Afspraak</h2>
       <div
         css={css`
           display: flex;

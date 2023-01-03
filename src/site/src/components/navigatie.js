@@ -88,7 +88,7 @@ const Navigatie = () => {
             <LinkWrapper>
                 <li><Link href="#service">Service</Link></li>
                 <li><Link href="#stock">Stock</Link></li>
-                <li><Link href="#contact">Contact</Link></li>
+                <li><Link href="#afspraak">Afspraak</Link></li>
             </LinkWrapper>
         </div>
     )
