@@ -2,11 +2,19 @@ import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useStaticQuery, graphql } from "gatsby"
+import device from "../helpers/breakpoints"
 
 const Navigatie = () => {
     const data = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "logo_cp.png" }) {
+            large: file(relativePath: { eq: "logo_cp.png" }) {
+                sharp: childImageSharp {
+                    fixed(height: 65) {
+                        src
+                    }
+                }
+            }
+            small: file(relativePath: { eq: "logo_cp_small.png" }) {
                 sharp: childImageSharp {
                     fixed(height: 65) {
                         src
@@ -81,8 +89,25 @@ const Navigatie = () => {
             box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
         `}>
             <LogoWrapper>
-                <Link href="/">
-                    <img src={data.logo.sharp.fixed.src} alt="Garage Vantilt." />
+                <Link href="/" css={css`
+                      @media ${device.phone} {
+                        display: inline;
+                      }
+                      @media ${device.desktop} {
+                        display: none;
+                      }
+                    `}>
+                    <img src={data.small.sharp.fixed.src} alt="Garage Vantilt." />
+                </Link>
+                <Link href="/" css={css`
+                      @media ${device.phone} {
+                        display: none;
+                      }
+                      @media ${device.desktop} {
+                        display: inline;
+                      }
+                    `}>
+                    <img src={data.large.sharp.fixed.src} alt="Garage Vantilt." />
                 </Link>
             </LogoWrapper>
             <LinkWrapper>
