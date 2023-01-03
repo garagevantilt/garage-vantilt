@@ -13,7 +13,7 @@ const Contact = () => {
 
   const data = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "GARAGE_VANTILT_2021.png" }) {
+            logo: file(relativePath: { eq: "logo_cp.png" }) {
                 sharp: childImageSharp {
                     fixed(height: 65) {
                         src
@@ -119,6 +119,15 @@ const Contact = () => {
           text-align: left;
         `}
       >
+        <div>
+          <p>
+            <StyledLink href="https://vantilt.wacs.online/afspraak#" css={css`
+              text-transform: none
+              `}>
+              Maak online een afspraak voor een onderhoudsbeurt of herstelling
+            </StyledLink>
+          </p>
+        </div>
         <div>
           <p>
             Voor vragen of info over onze services of tweedehandswagens kan u ons altijd contacteren.
