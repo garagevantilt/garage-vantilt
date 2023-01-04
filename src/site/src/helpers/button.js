@@ -4,7 +4,7 @@ import { css } from "@emotion/core"
 const Button = ({link, text}) => {
     return (
         <a href={link} css={css`
-            background-color: #16446C;
+            background-color: #466071;
             color: #FFF;
             border-radius: 10px;
             border: 2px solid #FFF;
@@ -16,7 +16,7 @@ const Button = ({link, text}) => {
 
             &:hover {
                 background-color: #FFF;
-                color: #16446C;
+                color: #466071;
             }
 
         `}>{text}</a>

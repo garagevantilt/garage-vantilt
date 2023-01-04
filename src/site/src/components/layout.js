@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           h4,
           h5,
           h6 {
-              color: #16446C;
+              color: #466071;
               line-height: 1.1;
               text-align: center;
               margin-top: 3.5rem;
@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
           }
 
           strong {
-              color: #16446C;
+              color: #FE8813;
           }
 
           p {

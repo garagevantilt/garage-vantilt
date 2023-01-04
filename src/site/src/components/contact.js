@@ -81,7 +81,7 @@ const Contact = () => {
   const StyledLink = styled.a`
     text-transform: lowercase;
     text-decoration: none;
-    color: #16446c;
+    color: #466071;
     font-weight: bold;
     position: relative;
 
@@ -91,7 +91,7 @@ const Contact = () => {
 
     &::after {
       border-radius: 1em;
-      border-top: 2px solid #16446c;
+      border-top: 2px solid #466071;
       content: "";
       position: absolute;
       right: 100%;
@@ -311,7 +311,7 @@ const Contact = () => {
         </div>
         <div
           css={css`
-            background-color: #16446c;
+            background-color: #466071;
             color: #fff;
             margin: 0 auto;
             margin-left: calc(50% - 50vw);

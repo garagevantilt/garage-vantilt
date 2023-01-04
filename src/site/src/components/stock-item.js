@@ -29,8 +29,8 @@ const StockItem = ({ hasBadge, text, item }) => {
 
     function parseDate(str, format, locale) {
         return dateFnsParse(str, format, new Date(), { locale });
-        
-    }   
+
+    }
 
     function formatDate(date, format, locale) {
         return dateFnsFormat(date, format, { locale });
@@ -64,7 +64,7 @@ const StockItem = ({ hasBadge, text, item }) => {
 
                 &::before {
                     content: '${badgeText}';
-                    color: #16446C;
+                    color: #466071;
                     font-weight: bold;
                     left: -22px;
                     position: absolute;

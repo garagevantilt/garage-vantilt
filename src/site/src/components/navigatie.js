@@ -27,7 +27,7 @@ const Navigatie = () => {
     const Link = styled.a`
         text-transform: uppercase;
         text-decoration: none;
-        color: #16446C;
+        color: #466071;
         font-weight: bold;
         position: relative;
 
@@ -37,7 +37,7 @@ const Navigatie = () => {
 
         &::after {
             border-radius: 1em;
-            border-top: 2px solid #16446C;
+            border-top: 2px solid #466071;
             content: "";
             position: absolute;
             right: 100%;
