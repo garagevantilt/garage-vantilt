@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
           }
 
           strong {
-              color: #FE8813;
+              color: #466071;
           }
 
           p {

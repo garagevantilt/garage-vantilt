@@ -5,9 +5,9 @@ const InverseButton = ({link, text}) => {
     return (
         <a href={link} css={css`
             background-color: #FFF;
-            color: #466071;
+            color: #FE8813;
             border-radius: 10px;
-            border: 2px solid #466071;
+            border: 2px solid #FE8813;
             padding: .5rem;
             text-decoration: none;
             text-transform: lowercase;
@@ -15,7 +15,7 @@ const InverseButton = ({link, text}) => {
             transition: all 0.5s ease-in-out;
 
             &:hover {
-                background-color: #466071;
+                background-color: #FE8813;
                 color: #FFF;
             }
 

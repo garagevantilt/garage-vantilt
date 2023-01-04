@@ -87,11 +87,12 @@ const Contact = () => {
 
     &:hover {
       text-decoration: none;
+      color: #FE8813;
     }
 
     &::after {
       border-radius: 1em;
-      border-top: 2px solid #466071;
+      border-top: 2px solid #FE8813;
       content: "";
       position: absolute;
       right: 100%;
