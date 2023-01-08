@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faHome } from "@fortawesome/free-solid-svg-icons"
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons"
 import map from "../images/contact_map.png"
 import device from "../helpers/breakpoints"
@@ -14,7 +13,7 @@ const Contact = () => {
 
   const data = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "GARAGE_VANTILT_2021.png" }) {
+            logo: file(relativePath: { eq: "logo_cp.png" }) {
                 sharp: childImageSharp {
                     fixed(height: 65) {
                         src
@@ -82,17 +81,18 @@ const Contact = () => {
   const StyledLink = styled.a`
     text-transform: lowercase;
     text-decoration: none;
-    color: #16446c;
+    color: #466071;
     font-weight: bold;
     position: relative;
 
     &:hover {
       text-decoration: none;
+      color: #FE8813;
     }
 
     &::after {
       border-radius: 1em;
-      border-top: 2px solid #16446c;
+      border-top: 2px solid #FE8813;
       content: "";
       position: absolute;
       right: 100%;
@@ -108,10 +108,10 @@ const Contact = () => {
 
   return (
     <>
-      <span className="anchor" id="contact">
-        Contact
+      <span className="anchor" id="afspraak">
+      Afspraak
       </span>
-      <h2>Contact</h2>
+      <h2>Afspraak</h2>
       <div
         css={css`
           display: flex;
@@ -120,6 +120,15 @@ const Contact = () => {
           text-align: left;
         `}
       >
+        <div>
+          <p>
+            <StyledLink href="https://vantilt.wacs.online/afspraak#" css={css`
+              text-transform: none
+              `}>
+              Maak online een afspraak voor een onderhoudsbeurt of herstelling
+            </StyledLink>
+          </p>
+        </div>
         <div>
           <p>
             Voor vragen of info over onze services of tweedehandswagens kan u ons altijd contacteren.
@@ -303,7 +312,7 @@ const Contact = () => {
         </div>
         <div
           css={css`
-            background-color: #16446c;
+            background-color: #466071;
             color: #fff;
             margin: 0 auto;
             margin-left: calc(50% - 50vw);

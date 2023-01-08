@@ -1026,9 +1026,9 @@
     to-fast-properties "^2.0.0"
 
 "@egjs/agent@^2.2.1":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@egjs/agent/-/agent-2.3.0.tgz#5a18150ce46a2ba1d237a847db44b0a234bd96f0"
-  integrity sha512-ENhwkOW6rnYW8IuXJwvECIAzj7nMxq+ctB8uCJ+mKnoKK8tGiv3YXtN6nuaOov2YmXdRdwafSz9rhgRNXswX/A==
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@egjs/agent/-/agent-2.4.3.tgz#6d44e2fb1ff7bab242c07f82732fe60305ac6f06"
+  integrity sha512-XvksSENe8wPeFlEVouvrOhKdx8HMniJ3by7sro2uPF3M6QqWwjzVcmvwoPtdjiX8O1lfRoLhQMp1a7NGlVTdIA==
 
 "@egjs/axes@^2.8.0":
   version "2.8.0"
@@ -1051,6 +1051,11 @@
   resolved "https://registry.yarnpkg.com/@egjs/component/-/component-2.2.2.tgz#b8208ea4ca05f6562a51d58f1e6f9979aad8a9d9"
   integrity sha512-2m6nu6/Mbs6VnoT4IHFGUBX6V82Zp01zDmlWpIJ3fMatHpe7BB1qUYFgMmSWGY0uOvOl4plvflwbCRUAGMfwWQ==
 
+"@egjs/component@^3.0.1":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-3.0.4.tgz#ad7b53794b2a612806179a188ad828acb9525f61"
+  integrity sha512-sXA7bGbIeLF2OAw/vpka66c6QBBUPcA4UUhR4WGJfnp2XWdiI8QrnJGJMr/UxpE/xnevX9tN3jvNPlW8WkHl3g==
+
 "@egjs/flicking-plugins@^3.1.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@egjs/flicking-plugins/-/flicking-plugins-3.3.0.tgz#e7721ecf98a3c626b5a9611ce130df449031607c"
@@ -1058,10 +1063,10 @@
   dependencies:
     "@egjs/flicking" "^3.1.1"
 
-"@egjs/flicking@^3.1.1", "@egjs/flicking@^3.8.3":
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-3.8.3.tgz#803a863fadfe8bfc86f04df97c1a3b5864552201"
-  integrity sha512-iW2eIe0B2VPs6lkZFdBEgU/RT9/ct0MSNssDNo3kcIhjX0d9NLs5M8kj1Mk5hJnlz5Uqbk8S1I42t8RpuzhaQQ==
+"@egjs/flicking@^3.1.1", "@egjs/flicking@~3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-3.9.3.tgz#01ee26a016a9e45d2a89b5d8883f0be38e3c297a"
+  integrity sha512-KGOSSeGDA9+0m24F3/hC+nc77/kRPuIVM3prTRcPB5jzhWcxJHpP9nyxJvitFJ+Ge4sPbZQxzLzUErgz9rrfWQ==
   dependencies:
     "@egjs/axes" "^2.8.0"
     "@egjs/component" "^2.2.2"
@@ -1076,24 +1081,24 @@
     "@types/hammerjs" "^2.0.36"
 
 "@egjs/imready@^1.1.2":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@egjs/imready/-/imready-1.1.3.tgz#6c7890e4357df11f22208fef95972bedc00f980d"
-  integrity sha512-9jbF0RZZdgzZqpfOb3IlpgStlkid2Wb6hMw06ln5kmGwUbkgbYCW/hWDeoRX2bVWCf9SAoAZK7dcMnK0U8+FHw==
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@egjs/imready/-/imready-1.3.1.tgz#00d6008a07a0ae7eb1865e7aedcedb964c60c567"
+  integrity sha512-ReDNST6BEt65lApC4e241jZjexKPn1FvtDEIctuJ/I4uHG6Qm9KBVrHiZhLcPCRYAQPkYkphP/0v8nAVzT69qw==
   dependencies:
-    "@egjs/component" "^2.2.2"
+    "@egjs/component" "^3.0.1"
 
 "@egjs/list-differ@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.0.tgz#2277aff52e3e4bd9318d5c30ffc3ba3b6216f05e"
   integrity sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==
 
-"@egjs/react-flicking@^3.2.1":
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/@egjs/react-flicking/-/react-flicking-3.7.2.tgz#bd06c0c408dcc4ff7b424e89d2339911279b9128"
-  integrity sha512-OpNEgvHxUqR7XU8VawR7XZYfbSaBUEu0Q36ssPhGV/A5wpF466hIN1xw78lbZbXxBEfAkq0EN46lIb2Stx+L0Q==
+"@egjs/react-flicking@^3.1.0":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@egjs/react-flicking/-/react-flicking-3.8.3.tgz#2839a60b51cd52aa9aed9806f3bfea931a96e56a"
+  integrity sha512-DMvd8ckXD2FxHHneOV5nmowFzq5o5a32585iFAwBaG32H+rpK+UBeR3sqzPNuITysRYmLEOpGhNBa6Afi/Ed/w==
   dependencies:
     "@egjs/children-differ" "^1.0.1"
-    "@egjs/flicking" "^3.8.3"
+    "@egjs/flicking" "~3.9.3"
     "@egjs/list-differ" "^1.0.0"
 
 "@emotion/babel-plugin-jsx-pragmatic@^0.1.5":
@@ -1968,9 +1973,9 @@
     "@types/node" "*"
 
 "@types/hammerjs@^2.0.36":
-  version "2.0.40"
-  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.40.tgz#ded0240b6ea1ad7afc1e60374c49087aaea5dbd8"
-  integrity sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA==
+  version "2.0.41"
+  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.41.tgz#f6ecf57d1b12d2befcce00e928a6a097c22980aa"
+  integrity sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA==
 
 "@types/http-cache-semantics@*":
   version "4.0.1"
@@ -4342,11 +4347,6 @@ css-select@^4.1.3:
     domutils "^2.6.0"
     nth-check "^2.0.0"
 
-css-selector-parser@^1.1.0:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/css-selector-parser/-/css-selector-parser-1.4.1.tgz#03f9cb8a81c3e5ab2c51684557d5aaf6d2569759"
-  integrity sha512-HYPSb7y/Z7BNDCOrakL4raGO2zltZkbeXyAd6Tg9obzix6QhzxCotdBl6VT0Dv4vZfJGVz3WL/xaEI9Ly3ul0g==
-
 css-selector-tokenizer@^0.7.0:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.7.3.tgz#735f26186e67c749aaf275783405cf0661fae8f1"
@@ -6579,16 +6579,6 @@ gatsby-transformer-sharp@^2.2.5, gatsby-transformer-sharp@^2.3.19:
     semver "^7.3.4"
     sharp "^0.27.0"
 
-gatsby-transformer-yaml@^2.3.1:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.11.0.tgz#b99377e2feaec20df4c1a90cce6cb28aa7c929fb"
-  integrity sha512-+PTsnXdmKUbqqZH1cE3SnrDHKxE0ElNRGBDoDQjuz/ip5EnIcxHRj/nnzUA6RkcZ/a9UB4e2xaNOZAJbwDyqKg==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    js-yaml "^3.14.1"
-    lodash "^4.17.20"
-    unist-util-select "^1.5.0"
-
 gatsby@^2.19.45:
   version "2.32.13"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.32.13.tgz#f4b1959b96d1fd853f9e6a2ce2451250e96bdeb4"
@@ -8348,7 +8338,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.13.1, js-yaml@^3.14.1:
+js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
@@ -9657,7 +9647,7 @@ npmlog@^4.0.1, npmlog@^4.1.2:
     gauge "~2.7.3"
     set-blocking "~2.0.0"
 
-nth-check@^1.0.1, nth-check@^1.0.2:
+nth-check@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
   integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
@@ -13395,15 +13385,6 @@ unist-util-remove@^2.0.0:
   integrity sha512-J8NYPyBm4baYLdCbjmf1bhPu45Cr1MWTm77qd9istEkzWpnN6O9tMsEbB2JhNnBCqGENRqEWomQ+He6au0B27Q==
   dependencies:
     unist-util-is "^4.0.0"
-
-unist-util-select@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/unist-util-select/-/unist-util-select-1.5.0.tgz#a93c2be8c0f653827803b81331adec2aa24cd933"
-  integrity sha1-qTwr6MD2U4J4A7gTMa3sKqJM2TM=
-  dependencies:
-    css-selector-parser "^1.1.0"
-    debug "^2.2.0"
-    nth-check "^1.0.1"
 
 unist-util-stringify-position@^2.0.0:
   version "2.0.3"
