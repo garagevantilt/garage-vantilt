@@ -54,7 +54,7 @@ const Navigatie = () => {
     const LinkWrapper = styled.ul`
         position: relative;
         right: -1rem;
-        top: -1.5rem;
+        top: -0.5rem;
         margin-top: 0;
         display: flex;
         justify-content: space-between;
