@@ -1,8 +1,4 @@
 module.exports = {
-  proxy: {
-    prefix: "/api",
-    url: "http://localhost:7071/api/",
-  },
   siteMetadata: {
     title: ` Garage Vantilt`,
     description: `Wij zijn een klein familiebedrijf met al meer dan 25 jaar ervaring met het onderhoud, herstellen en verkopen van voertuigen. Wij werken elke dag met veel passie om de wagens van onze klanten in topconditie te houden.`,
@@ -23,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Garage Vantilt`,
         short_name: `Garage Vantilt`,
         start_url: `/`,
         background_color: `#FFF`,
