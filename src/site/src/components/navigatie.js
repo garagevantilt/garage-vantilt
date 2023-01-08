@@ -65,6 +65,10 @@ const Navigatie = () => {
         padding: 0;
         padding-left: 0.7rem;
         list-style: none;
+
+        @media ${device.desktop} {
+            top: -1.5rem;
+        }
     `;
 
     const LogoWrapper = styled.div`
