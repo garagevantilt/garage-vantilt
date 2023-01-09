@@ -3,9 +3,8 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons"
+import { faMobileAlt, faCalendarAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import map from "../images/contact_map.png"
 import device from "../helpers/breakpoints"
 
@@ -31,18 +30,15 @@ const Contact = () => {
     const isAppointment = currentDay === 5 || currentDay === 6;
     const isClosed = currentDay === 0;
 
-    if (type === "isWorkday")
-    {
+    if (type === "isWorkday") {
       return isWorkday;
     }
 
-    if (type === "isAppointment")
-    {
+    if (type === "isAppointment") {
       return isAppointment;
     }
 
-    if (type === "isClosed")
-    {
+    if (type === "isClosed") {
       return isClosed;
     }
   }
@@ -108,10 +104,10 @@ const Contact = () => {
 
   return (
     <>
-      <span className="anchor" id="afspraak">
-      Afspraak
+      <span className="anchor" id="contact">
+        Contact
       </span>
-      <h2>Afspraak</h2>
+      <h2>Contact</h2>
       <div
         css={css`
           display: flex;
@@ -125,13 +121,36 @@ const Contact = () => {
             <StyledLink href="https://vantilt.wacs.online/afspraak#" css={css`
               text-transform: none
               `}>
-              Maak online een afspraak voor een onderhoudsbeurt of herstelling
+              Maak via deze link online een afspraak voor een onderhoudsbeurt of herstelling
             </StyledLink>
           </p>
         </div>
         <div>
-          <p>
-            Voor vragen of info over onze services of tweedehandswagens kan u ons altijd contacteren.
+          <p css={css`
+              margin-top: 1.5rem;
+            `}>
+            Voor vragen of info over onze services of tweedehandswagens kan u ons altijd contacteren
+          </p>
+          <p css={css`
+              margin-top: 1.5rem;
+            `}>
+            U kan ons ook volgen op
+            <StyledLink href="https://www.facebook.com/garagevantilt" css={css`
+                text-transform: none
+              `}>facebook
+              </StyledLink>
+              <StyledLink href="https://www.facebook.com/garagevantilt" css={css`
+                text-transform: none
+              `}>&nbsp;<FontAwesomeIcon icon={faFacebook} />
+              </StyledLink> en
+              <StyledLink href="https://instagram.com/garagevantilt?igshid=YmMyMTA2M2Y=" css={css`
+                text-transform: none
+              `}>Instagram
+              </StyledLink>
+              <StyledLink href="https://instagram.com/garagevantilt?igshid=YmMyMTA2M2Y=" css={css`
+                text-transform: none
+              `}>&nbsp;<FontAwesomeIcon icon={faInstagram} />
+              </StyledLink>
           </p>
           <div
             css={css`
