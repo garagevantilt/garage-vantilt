@@ -2,11 +2,19 @@ import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useStaticQuery, graphql } from "gatsby"
+import device from "../helpers/breakpoints"
 
 const Navigatie = () => {
     const data = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "GARAGE_VANTILT_2021.png" }) {
+            large: file(relativePath: { eq: "logo_cp.png" }) {
+                sharp: childImageSharp {
+                    fixed(height: 65) {
+                        src
+                    }
+                }
+            }
+            small: file(relativePath: { eq: "logo_cp_small.png" }) {
                 sharp: childImageSharp {
                     fixed(height: 65) {
                         src
@@ -19,7 +27,7 @@ const Navigatie = () => {
     const Link = styled.a`
         text-transform: uppercase;
         text-decoration: none;
-        color: #16446C;
+        color: #466071;
         font-weight: bold;
         position: relative;
 
@@ -29,7 +37,7 @@ const Navigatie = () => {
 
         &::after {
             border-radius: 1em;
-            border-top: 2px solid #16446C;
+            border-top: 2px solid #466071;
             content: "";
             position: absolute;
             right: 100%;
@@ -57,6 +65,10 @@ const Navigatie = () => {
         padding: 0;
         padding-left: 0.7rem;
         list-style: none;
+
+        @media ${device.desktop} {
+            top: -1.5rem;
+        }
     `;
 
     const LogoWrapper = styled.div`
@@ -72,7 +84,7 @@ const Navigatie = () => {
             left: 0;
             margin: 0 auto;
             width: 100%;
-            background-color: #fafafa;
+            background-color: #fff;
             display: flex;
             justify-content: space-between;
             text-align: right;
@@ -81,8 +93,25 @@ const Navigatie = () => {
             box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
         `}>
             <LogoWrapper>
-                <Link href="/">
-                    <img src={data.logo.sharp.fixed.src} alt="Garage Vantilt." />
+                <Link href="/" css={css`
+                      @media ${device.phone} {
+                        display: inline;
+                      }
+                      @media ${device.desktop} {
+                        display: none;
+                      }
+                    `}>
+                    <img src={data.small.sharp.fixed.src} alt="Garage Vantilt." />
+                </Link>
+                <Link href="/" css={css`
+                      @media ${device.phone} {
+                        display: none;
+                      }
+                      @media ${device.desktop} {
+                        display: inline;
+                      }
+                    `}>
+                    <img src={data.large.sharp.fixed.src} alt="Garage Vantilt." />
                 </Link>
             </LogoWrapper>
             <LinkWrapper>

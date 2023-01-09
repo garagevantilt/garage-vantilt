@@ -35,10 +35,6 @@ const ServiceLogos = () => {
                     min-width: 250px;
                     transition: all 0.2s ease-in-out;
 
-                    &:hover {
-                        transform: scale(1.05);
-                    }
-
                     @media ${device.tablet} {
                         padding-top: 0rem;
                     }
@@ -51,7 +47,7 @@ const ServiceLogos = () => {
                         position: relative;
                         top: 15px;
                     `} />
-                    <h3 css={css`margin-top: 2rem; text-transform: lowercase;`}>Banden</h3>
+                    <h3 css={css`margin-top: 2rem; text-transform: Initial; color: #FE8813;`}>Banden</h3>
                 </div>
                 <div css={css`
                     flex-basis: 30%;
@@ -60,10 +56,6 @@ const ServiceLogos = () => {
                     min-width: 250px;
                     padding-top: 2.5rem;
                     transition: all 0.2s ease-in-out;
-
-                    &:hover {
-                        transform: scale(1.05);
-                    }
 
                     @media ${device.tablet} {
                         padding-top: 0rem;
@@ -74,7 +66,7 @@ const ServiceLogos = () => {
                         margin-left: auto;
                         margin-right: auto;
                     `} />
-                    <h3 css={css`margin-top: 0.5rem; text-transform: lowercase;`}>Diagnose</h3>
+                    <h3 css={css`margin-top: 0.5rem; text-transform: Initial; color: #FE8813;`}>Diagnose</h3>
                 </div>
                 <div css={css`
                     flex-basis: 30%;
@@ -83,10 +75,6 @@ const ServiceLogos = () => {
                     min-width: 250px;
                     padding-top: 2.5rem;
                     transition: all 0.2s ease-in-out;
-
-                    &:hover {
-                        transform: scale(1.05);
-                    }
 
                     @media ${device.tablet} {
                         padding-top: 0rem;
@@ -97,7 +85,7 @@ const ServiceLogos = () => {
                         margin-left: auto;
                         margin-right: auto;
                     `} />
-                    <h3 css={css`margin-top: 1.5rem; text-transform: lowercase;`}>Onderhoud</h3>
+                    <h3 css={css`margin-top: 1.5rem; text-transform: Initial; color: #FE8813;`}>Onderhoud</h3>
                 </div>
             </div>
         </div>

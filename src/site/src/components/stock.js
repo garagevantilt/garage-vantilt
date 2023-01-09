@@ -63,7 +63,7 @@ const Stock = () => {
       </div>
       <div
         css={css`
-          background-color: #16446c;
+          background-color: #466071;
           margin: 0 auto;
           margin-left: calc(50% - 50vw);
           margin-right: calc(50% - 50vw);
